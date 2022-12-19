@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="PRODUCTOS" directorySegmentName="seg_0" id="C429D26F-CC8E-D925-CA89-7772A140D5DD">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<schemaObject>CB0A87CA-28D9-64EA-F43A-F71F66C847B9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8E996C6C-9690-A7F7-0B7D-B6DA925C5B67</segment>
+<tableSpace>4BF4E9A6-F9ED-7836-D126-33C4B53D91B0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="1A547595-7175-1089-93F3-6C9668F84AD4">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="9809CADD-2248-C8AF-2627-2FF795FEE5BE">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="A329DA9C-0F9E-4103-5CDD-A5FE389FE0FC">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUCTOS_PK" id="D138A1C1-6E9D-0685-392C-1A58DEFB87B3">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<schemaObject>CB0A87CA-28D9-64EA-F43A-F71F66C847B9</schemaObject>
+<segment>59FB4C66-3918-0A90-BC30-A2BA7FA3C36E</segment>
+<tableSpace>4BF4E9A6-F9ED-7836-D126-33C4B53D91B0</tableSpace>
+<indexSegment>59FB4C66-3918-0A90-BC30-A2BA7FA3C36E</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

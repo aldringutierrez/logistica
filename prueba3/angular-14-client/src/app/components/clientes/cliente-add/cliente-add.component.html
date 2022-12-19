@@ -1,0 +1,58 @@
+<div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            required
+            [(ngModel)]="cliente.nombre"
+            name="nombre"
+          />
+        </div>
+  
+        <div class="form-group">
+            <label for="direccion">Direccion</label>
+            <input
+              class="form-control"
+              id="direccion"
+              required
+              [(ngModel)]="cliente.direccion"
+              name="direccion"
+            />
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              class="form-control"
+              id="email"
+              required
+              [(ngModel)]="cliente.email"
+              name="email"
+            />
+          </div>
+    
+          <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input
+              class="form-control"
+              id="telefono"
+              required
+              [(ngModel)]="cliente.telefono"
+              name="telefono"
+            />
+          </div>
+    
+              <button (click)="saveCliente()" class="btn btn-success">Submit</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h4>submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newCliente()">Add</button>
+      </div>
+    </div>
+  </div>
+  

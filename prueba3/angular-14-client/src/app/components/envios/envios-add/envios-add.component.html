@@ -1,0 +1,91 @@
+<div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="cliente">Cliente</label>
+          <select id="clientes" name="clientes" class="form-control" [(ngModel)]="envio.clienteId" >
+            <option value="" disabled selected>Seleccione un cliente</option>
+            <option *ngFor="let cliente of clientes" [value]="cliente.id">{{cliente.nombre}}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="producto">Producto</label>
+          <select id="productos" name="productos" class="form-control" [(ngModel)]="envio.productoId" >
+            <option value="" disabled selected>Seleccione un producto</option>
+            <option *ngFor="let producto of productos" [value]="producto.id">{{producto.nombre}}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="bodega">Bodega</label>
+          <input class="form-control" id="bodega"required [(ngModel)]="envio.bodegaId" name="bodega" />
+        </div>
+  
+        <div class="form-group">
+            <label for="puerto">Puerto</label>
+            <input class="form-control" id="puerto" required [(ngModel)]="envio.puertoId" name="puerto"  />
+        </div>
+    
+        <div class="form-group">
+          <label for="precio">Precio</label>
+          <input class="form-control" id="precio" required  [(ngModel)]="envio.precio" name="precio"  (change)="recalcula($event)" />
+        </div>
+  
+        <div class="form-group">
+          <label for="cantidad">Cantidad</label>
+          <input class="form-control" id="cantidad" required [(ngModel)]="envio.cantidad" name="cantidad"  (change)="recalcula($event)" />
+        </div>
+  
+        <div class="form-group">
+          <label for="descuento">Descuento</label>
+          <input class="form-control" id="descuento" required  [(ngModel)]="envio.descuento" name="descuento" />
+        </div>
+  
+        <div class="form-group">
+          <label for="total">Total</label>
+          <input class="form-control" id="total" required [(ngModel)]="envio.total" name="total" />
+        </div>
+  
+        <div class="form-group">
+          <label for="fechaRegistro">Fecha Registro </label>
+          <input type="text" class="form-control" id="fechaRegistro" [(ngModel)]="envio.fechaRegistro"  name="fechaRegistro"  bsDatepicker />
+        </div>
+
+        <div class="form-group">
+          <label for="fechaEntrega">Fecha Entrega </label>
+          <input type="text" class="form-control" id="fechaEntrega" [(ngModel)]="envio.fechaEntrega"  name="fechaEntrega"  bsDatepicker />
+        </div>
+
+  
+        <div class="form-group">
+          <label for="total">Placa</label>
+          <input class="form-control" id="placa" name="placa" required [(ngModel)]="envio.placa" />
+        </div>
+  
+        <div class="form-group">
+          <label for="total">Flota</label>
+          <input class="form-control" id="flota" name="flota" required [(ngModel)]="envio.flota" />
+        </div>
+  
+        <div class="form-group">
+          <label for="total">Guia</label>
+          <input class="form-control" id="guia" name="guia" required [(ngModel)]="envio.guia" />
+        </div>
+  
+        <div class="form-group">
+          <label for="total">Internacional</label>
+          <input class="form-control" id="internacional" name="internacional" required [(ngModel)]="envio.internacional" />
+        </div>
+  
+
+        <button (click)="saveEnvio()" class="btn btn-success">Submit</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h4> submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newEnvio()">Add</button>
+      </div>
+    </div>
+  </div>
+  

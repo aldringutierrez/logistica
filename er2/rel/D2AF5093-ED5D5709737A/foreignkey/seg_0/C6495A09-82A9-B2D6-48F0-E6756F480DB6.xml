@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C6495A09-82A9-B2D6-48F0-E6756F480DB6" containerWithKeyObject="B4BCB170-57BA-4713-8A84-2216E99B4646" localFKIndex="455E54C0-A787-97E9-F2A8-277CE65F1092" name="SYS_C004063">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>LOGISTICA</sourceObjSchema>
+<sourceObjName>SYS_C004063</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<referredTableLongName>LOGISTICA.BODEGAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B39558DC-CE2E-22E9-F16C-9231EF026289</referredTableID>
+<keyObject>DFE12063-BBB1-EFCB-1B5A-B15341818A66</keyObject>
+<referredKeyID>DFE12063-BBB1-EFCB-1B5A-B15341818A66</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="CLIENTES" directorySegmentName="seg_0" id="420E9FCD-589D-DD85-59CF-D289770B3A69">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<schemaObject>CB0A87CA-28D9-64EA-F43A-F71F66C847B9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8E996C6C-9690-A7F7-0B7D-B6DA925C5B67</segment>
+<tableSpace>4BF4E9A6-F9ED-7836-D126-33C4B53D91B0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="057BF8D2-1E88-E4BC-A0F8-B348BAE7C519">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELEFONO" id="28A57E50-7778-7908-147D-5DD5EB630E71">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="702AAB92-1DD2-2B37-6F10-3956360C029D">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIRECCION" id="E304AD78-342F-B9C7-2CC4-7743E3A072F4">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="FC21C450-83C3-945A-E483-CB70D3BC80ED">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CLIENTES_PK" id="709D1DFA-3253-535D-77D7-F9721C1FDD13">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<schemaObject>CB0A87CA-28D9-64EA-F43A-F71F66C847B9</schemaObject>
+<segment>59FB4C66-3918-0A90-BC30-A2BA7FA3C36E</segment>
+<tableSpace>4BF4E9A6-F9ED-7836-D126-33C4B53D91B0</tableSpace>
+<indexSegment>59FB4C66-3918-0A90-BC30-A2BA7FA3C36E</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

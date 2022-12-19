@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C429D26F-CC8E-D925-CA89-7772A140D5DD" schemaObject="CB0A87CA-28D9-64EA-F43A-F71F66C847B9" name="PRODUCTOS">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>LOGISTICA</sourceObjSchema>
+<sourceObjName>PRODUCTOS</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A329DA9C-0F9E-4103-5CDD-A5FE389FE0FC">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="1A547595-7175-1089-93F3-6C9668F84AD4">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="9809CADD-2248-C8AF-2627-2FF795FEE5BE">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>PRODUCTOS</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D138A1C1-6E9D-0685-392C-1A58DEFB87B3" schemaObject="CB0A87CA-28D9-64EA-F43A-F71F66C847B9" name="PRODUCTOS_PK">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>LOGISTICA</sourceObjSchema>
+<sourceObjName>SYS_C004057</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A329DA9C-0F9E-4103-5CDD-A5FE389FE0FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

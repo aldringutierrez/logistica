@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5109BC69-2C39-FD28-DC72-BBB98135F2E6" name="CLIENTES">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>420E9FCD-589D-DD85-59CF-D289770B3A69</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1DC29591-11B8-4A80-5895-A90510C7645A">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>FC21C450-83C3-945A-E483-CB70D3BC80ED</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="95731390-6E6A-3C62-EAF4-F73FE55C246B">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>057BF8D2-1E88-E4BC-A0F8-B348BAE7C519</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DIRECCION" id="881187DB-4F00-AB6D-5282-EDE6EFDA572C">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>E304AD78-342F-B9C7-2CC4-7743E3A072F4</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EMAIL" id="DB775368-2E42-A38D-73D2-A574B2BA7C57">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>702AAB92-1DD2-2B37-6F10-3956360C029D</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TELEFONO" id="D0242192-122F-B13C-1D58-EEF8DB2BC805">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>28A57E50-7778-7908-147D-5DD5EB630E71</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="895DB8B7-4788-0ED7-6F11-4FB0CCEF7D30" name="CLIENTES PK">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>709D1DFA-3253-535D-77D7-F9721C1FDD13</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1DC29591-11B8-4A80-5895-A90510C7645A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

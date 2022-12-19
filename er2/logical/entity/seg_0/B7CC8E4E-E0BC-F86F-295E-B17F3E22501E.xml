@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B7CC8E4E-E0BC-F86F-295E-B17F3E22501E" name="PUERTOS">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>44F904BA-ED0F-7F55-24B3-0E3B6A47388F</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="D9E854AD-40C6-5A7E-1B2D-6343F1C2FF34">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>22F7B8C1-E92C-9CB1-FB54-7D8814DD7FE5</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="B7EF1F81-0DFF-4484-3231-FD8E100F80E0">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>58A2FB54-E691-081F-807A-6AA6402568B3</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="FAC5E152-1B49-0982-6EF4-2227B2C55223">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>1F0E078D-C635-E73E-56A4-025D31F1B764</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9F37E3D8-4CCA-67DA-09C6-9DAA9DEBEE5C" name="PUERTOS PK">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>779C3FAD-01FB-A4E9-362A-287673573017</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D9E854AD-40C6-5A7E-1B2D-6343F1C2FF34</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

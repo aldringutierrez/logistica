@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5FCA9966-110E-5DD4-5195-BA7E6AB755CF" name="PRODUCTOS">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>C429D26F-CC8E-D925-CA89-7772A140D5DD</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="612226D7-EF90-C8D8-B2A2-3B1A6B166A2A">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>A329DA9C-0F9E-4103-5CDD-A5FE389FE0FC</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="14FF65C9-9CC9-388C-3655-86EC8125A3F7">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>1A547595-7175-1089-93F3-6C9668F84AD4</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="9D2ECA47-2B6F-1421-BF3E-4B29071BA1B9">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>9809CADD-2248-C8AF-2627-2FF795FEE5BE</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6B8DB79F-FA1C-DAE8-E49E-8B30725AA8FF" name="PRODUCTOS PK">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>D138A1C1-6E9D-0685-392C-1A58DEFB87B3</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>612226D7-EF90-C8D8-B2A2-3B1A6B166A2A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,240 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="23AAD84F-A7F4-E87D-ACBE-1DA8D2DF2B78" name="ENVIOS">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>B4BCB170-57BA-4713-8A84-2216E99B4646</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="F0380E98-8A14-99BB-8843-A13870E507EF">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>D90BD78D-2A00-8CDE-B47B-C0B0D22EE7E4</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CLIENTE ID" id="2E12510C-5C6A-AD70-6CAF-5B15F86BCA34">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>2A4DA851-F0C8-C8E1-543E-7AA83824AE96</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1DC29591-11B8-4A80-5895-A90510C7645A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRODUCTO ID" id="6D0DAF6C-A0C5-FB09-A0BF-9B40FC6ADECA">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>EC6B59E5-558E-649C-006A-91BBD5FA8FAF</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>612226D7-EF90-C8D8-B2A2-3B1A6B166A2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BODEGA ID" id="37AD4B7C-6F16-89B2-A063-B12971A1C027">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>4225696C-0BC0-D610-2528-03D7CF54293E</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3C16F33B-1226-3EA8-3F37-95DFAEAE4C17</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PUERTO ID" id="65D4F0E6-7930-8A37-037F-59C8F4FA249B">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>9E76FEE8-3E9F-A592-9250-AC4C8D41455D</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>D9E854AD-40C6-5A7E-1B2D-6343F1C2FF34</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CANTIDAD" id="51AACB88-B924-DB8D-F6E6-9C0403CFCCD1">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>D64F0CBD-2364-2916-8790-DC90860F4577</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRECIO" id="6785C5F1-01BB-6193-A98D-F68F122F099C">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>C79C4737-E667-E22A-7A94-252046D0A17B</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA REGISTRO" id="A09303C2-16DF-AE77-70AD-B10E4109850B">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>0BEF8AC3-7AF3-53DE-C549-111333023F00</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA ENTREGA" id="386C0AB1-096C-A244-9638-A43466AC8689">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>73AAE392-9202-76E8-31F6-AE113391C38B</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PLACA" id="8DAD7837-9CD0-60D1-11F0-31879E2FAF58">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>7775F995-3472-883C-35C6-C99FDF7E5FA0</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FLOTA" id="0F8C9A82-EC32-6F48-A297-A87558BD9598">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>F9E96483-FFDE-9E70-580B-06799EDF32CF</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GUIA" id="2FA04DE3-8CF6-964A-A13E-8CDFC052E902">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>3402EFA5-F1A0-21B9-6E8B-1F0F880525A9</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INTERNACIONAL" id="AC7B5E82-B4B8-ABAE-73C2-F2D6783B6DC8">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>85C7C675-BDD8-BAC9-8D0E-4CA7E5FC1B4F</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BC5ACCAF-3381-3560-16C6-EFA399F97735" name="ENVIOS PK">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:53 UTC</createdTime>
+<generatorID>073C2818-BB39-7D1F-2271-3DF427CED48B</generatorID>
+<ownerDesignName>er2</ownerDesignName>
+<engineerTo>
+<item key="D2AF5093-C75F-94D3-EFEC-ED5D5709737A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F0380E98-8A14-99BB-8843-A13870E507EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

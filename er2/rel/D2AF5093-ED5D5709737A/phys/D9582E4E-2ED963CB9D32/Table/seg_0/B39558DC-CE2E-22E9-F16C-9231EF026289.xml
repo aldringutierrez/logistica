@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="BODEGAS" directorySegmentName="seg_0" id="B39558DC-CE2E-22E9-F16C-9231EF026289">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<schemaObject>CB0A87CA-28D9-64EA-F43A-F71F66C847B9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8E996C6C-9690-A7F7-0B7D-B6DA925C5B67</segment>
+<tableSpace>4BF4E9A6-F9ED-7836-D126-33C4B53D91B0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPCION" id="6AC88839-DF66-4FFA-EBA8-9432E88CF9D6">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="A2F731AA-F4F4-6DD5-B072-F280A139A08E">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="F4B05664-C331-777F-B9E3-A0EEE11E95D8">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BODEGAS_PK" id="DFE12063-BBB1-EFCB-1B5A-B15341818A66">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<schemaObject>CB0A87CA-28D9-64EA-F43A-F71F66C847B9</schemaObject>
+<segment>59FB4C66-3918-0A90-BC30-A2BA7FA3C36E</segment>
+<tableSpace>4BF4E9A6-F9ED-7836-D126-33C4B53D91B0</tableSpace>
+<indexSegment>59FB4C66-3918-0A90-BC30-A2BA7FA3C36E</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>

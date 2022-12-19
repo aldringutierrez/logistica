@@ -1,0 +1,157 @@
+<div *ngIf="viewMode; else editable">
+    <div *ngIf="currentEnvio.id">
+      <h4>Detalle</h4>
+      <div>
+        <label><strong>Cliente:</strong></label>  {{ nombreCliente }}
+      </div>
+      <div>
+        <label><strong>Producto:</strong></label>  {{ nombreProducto }}
+      </div>
+      <div>
+        <label><strong>Bodega:</strong></label>  {{ currentEnvio.bodegaId }}
+      </div>
+      <div>
+        <label><strong>Puerto:</strong></label>  {{ currentEnvio.puertoId }}
+      </div>
+      <div>
+        <label><strong>Cantidad:</strong></label>  {{ currentEnvio.cantidad }}
+      </div>
+      <div>
+        <label><strong>Precio:</strong></label>  {{ currentEnvio.precio }}
+      </div>
+      <div>
+        <label><strong>Descuento:</strong></label>  {{ currentEnvio.descuento }}
+      </div>
+      <div>
+        <label><strong>Total:</strong></label>  {{ currentEnvio.total }}
+      </div>
+      <div>
+        <label><strong>Fecha Registro:</strong></label>  {{ currentEnvio.fechaRegistro }}
+      </div>
+      <div>
+        <label><strong>Fecha Entrega:</strong></label>  {{ currentEnvio.fechaEntrega }}
+      </div>
+      <div>
+        <label><strong>Placa:</strong></label>  {{ currentEnvio.placa }}
+      </div>
+      <div>
+        <label><strong>Flota:</strong></label>  {{ currentEnvio.flota }}
+      </div>
+      <div>
+        <label><strong>Guia:</strong></label>  {{ currentEnvio.guia }}
+      </div>
+      <div>
+        <label><strong>Internacional : </strong></label>   {{ currentEnvio.internacional }}
+      </div>
+  
+      <a
+        class="badge badge-warning"
+        routerLink="/envios/{{ currentEnvio.id }}"
+      >
+        Editar
+      </a>
+      <button class="badge badge-danger mr-2" (click)="deleteEnvio()">
+        Delete
+      </button>
+  
+    </div>
+  
+    <div *ngIf="!currentEnvio">
+      <br />
+      <p>Please click on a Envio...</p>
+    </div>
+  </div>
+  
+  <ng-template #editable>
+    <div *ngIf="currentEnvio.id" class="edit-form">
+      <h4>Detalle</h4>
+      <form>
+        <div class="form-group">
+          <label for="cliente">Cliente</label>
+          <select id="clientes" name="clientes" class="form-control" [(ngModel)]="currentEnvio.clienteId" (change)="onChangeClientes($event)">
+            <option value="" disabled selected>Seleccione un cliente</option>
+            <option *ngFor="let cliente of clientes" [value]="cliente.id">{{cliente.nombre}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="producto">Producto</label>
+          <select id="productos" name="productos" class="form-control" [(ngModel)]="currentEnvio.productoId" >
+            <option value="" disabled selected>Seleccione un producto</option>
+            <option *ngFor="let producto of productos" [value]="producto.id">{{producto.nombre}}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="bodega">Bodega</label>
+          <input type="text" class="form-control" id="bodega" [(ngModel)]="currentEnvio.bodegaId"  name="bodega"  />
+        </div>
+        <div class="form-group">
+          <label for="puerto">Puerto</label>
+          <input type="text" class="form-control" id="puerto" [(ngModel)]="currentEnvio.puertoId"  name="puerto"  />
+        </div>
+        <div class="form-group">
+          <label for="precio">Precio</label>
+          <input type="text" class="form-control" id="descuento" [(ngModel)]="currentEnvio.precio"  name="precio"  (change)="recalcula($event)" />
+        </div>
+        <div class="form-group">
+          <label for="cantidad">Cantidad</label>
+          <input type="text" class="form-control" id="cantidad" [(ngModel)]="currentEnvio.cantidad"  name="total"  (change)="recalcula($event)" />
+        </div>
+        <div class="form-group">
+          <label for="descuento">Descuento</label>
+          <input type="text" class="form-control" id="precio" [(ngModel)]="currentEnvio.descuento"  name="descuento"  />
+        </div>
+        <div class="form-group">
+          <label for="total">Total</label>
+          <input type="text" class="form-control" id="total" [(ngModel)]="currentEnvio.total"  name="total"  />
+        </div>
+        <div class="form-group">
+          <label for="fechaRegistro">Fecha Registro </label>
+          <input type="text" class="form-control" id="fechaRegistro" [(ngModel)]="currentEnvio.fechaRegistro"  name="fechaRegistro"  bsDatepicker />
+        </div>
+        <div class="form-group">
+          <label for="fechaEntrega">Fecha Entrega</label>
+          <input type="text" class="form-control" id="fechaEntrega" [(ngModel)]="currentEnvio.fechaEntrega"  name="fechaEntrega"  bsDatepicker />
+        </div>
+        <div class="form-group">
+          <label for="placa">Placa</label>
+          <input type="text" class="form-control" id="placa" [(ngModel)]="currentEnvio.placa"  name="placa"  />
+        </div>
+        <div class="form-group">
+          <label for="flota">Flota</label>
+          <input type="text" class="form-control" id="flota" [(ngModel)]="currentEnvio.flota"  name="flota"  />
+        </div>
+        <div class="form-group">
+          <label for="guia">Guia</label>
+          <input type="text" class="form-control" id="guia" [(ngModel)]="currentEnvio.guia"  name="guia"  />
+        </div>
+        <div class="form-group">
+          <label for="total">Internacional  .</label>
+          <input type="checkbox" id="internacional" name="internacional" [(ngModel)]="myVar2" (change)="changeCheck()" >
+        </div>
+
+
+
+
+    </form>
+
+
+   
+      <button class="badge badge-danger mr-2" (click)="deleteEnvio()">
+        Delete
+      </button>
+      <button
+        type="submit"
+        class="badge badge-success mb-2"
+        (click)="updateEnvio()"
+      >
+        Update
+      </button>
+      <p>{{ message }}</p>
+    </div>
+  
+    <div *ngIf="!currentEnvio.id">
+      <br />
+      <p>Cannot access this Envio...</p>
+    </div>
+  </ng-template>
+  

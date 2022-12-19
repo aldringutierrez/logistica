@@ -1,0 +1,283 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B4BCB170-57BA-4713-8A84-2216E99B4646" schemaObject="CB0A87CA-28D9-64EA-F43A-F71F66C847B9" name="ENVIOS">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>LOGISTICA</sourceObjSchema>
+<sourceObjName>ENVIOS</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D90BD78D-2A00-8CDE-B47B-C0B0D22EE7E4">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLIENTE_ID" id="4A6921D5-316D-9AB5-1F83-124B61BC951C">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>CLIENTE_ID</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9520C7C-50C0-FA30-AE6E-F9275CC2A001" referredColumn="FC21C450-83C3-945A-E483-CB70D3BC80ED"/>
+</associations>
+</Column>
+<Column name="PRODUCTO_ID" id="C828DF98-9D6E-6D51-7A1D-1A0C02221A27">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>PRODUCTO_ID</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02865C37-C35C-8613-8030-8DE0C2785BEA" referredColumn="A329DA9C-0F9E-4103-5CDD-A5FE389FE0FC"/>
+</associations>
+</Column>
+<Column name="BODEGA_ID" id="8986CAEC-3A5C-05DD-C2FD-D07A977A2B36">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>BODEGA_ID</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6495A09-82A9-B2D6-48F0-E6756F480DB6" referredColumn="A2F731AA-F4F4-6DD5-B072-F280A139A08E"/>
+</associations>
+</Column>
+<Column name="PUERTO_ID" id="458376BF-E6D7-81F4-56F6-6BECEC54323F">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>PUERTO_ID</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="53683BC7-FE1A-14C2-673F-2E8F56F5AEB4" referredColumn="22F7B8C1-E92C-9CB1-FB54-7D8814DD7FE5"/>
+</associations>
+</Column>
+<Column name="CANTIDAD" id="D64F0CBD-2364-2916-8790-DC90860F4577">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>CANTIDAD</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO" id="C79C4737-E667-E22A-7A94-252046D0A17B">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>PRECIO</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_REGISTRO" id="0BEF8AC3-7AF3-53DE-C549-111333023F00">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>FECHA_REGISTRO</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_ENTREGA" id="73AAE392-9202-76E8-31F6-AE113391C38B">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>FECHA_ENTREGA</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PLACA" id="7775F995-3472-883C-35C6-C99FDF7E5FA0">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>PLACA</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FLOTA" id="F9E96483-FFDE-9E70-580B-06799EDF32CF">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>FLOTA</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GUIA" id="3402EFA5-F1A0-21B9-6E8B-1F0F880525A9">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>GUIA</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTERNACIONAL" id="85C7C675-BDD8-BAC9-8D0E-4CA7E5FC1B4F">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>ENVIOS</sourceObjSchema>
+<sourceObjName>INTERNACIONAL</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="073C2818-BB39-7D1F-2271-3DF427CED48B" schemaObject="CB0A87CA-28D9-64EA-F43A-F71F66C847B9" name="ENVIOS_PK">
+<sourceConnName>logistica</sourceConnName>
+<sourceObjSchema>LOGISTICA</sourceObjSchema>
+<sourceObjName>SYS_C004060</sourceObjName>
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D90BD78D-2A00-8CDE-B47B-C0B0D22EE7E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2952FF16-CAFC-8080-C6DB-380012F7E066" name="SYS_C004061">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A6921D5-316D-9AB5-1F83-124B61BC951C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C845601E-2234-96B7-3A33-8F7EEED10461" name="SYS_C004062">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C828DF98-9D6E-6D51-7A1D-1A0C02221A27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="455E54C0-A787-97E9-F2A8-277CE65F1092" name="SYS_C004063">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8986CAEC-3A5C-05DD-C2FD-D07A977A2B36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4F818DB-B15C-2F30-39F4-7D6B4BA56428" name="SYS_C004064">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="458376BF-E6D7-81F4-56F6-6BECEC54323F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,105 @@
+<div *ngIf="viewMode; else editable">
+    <div *ngIf="currentCliente.id">
+      <h4>Detalle</h4>
+      <div>
+        <label><strong>Direccion:</strong></label>  {{ currentCliente.direccion }}
+      </div>
+      <div>
+        <label><strong>Email:</strong></label>  {{ currentCliente.email }}
+      </div>
+      <div>
+        <label><strong>Telefono:</strong></label>  {{ currentCliente.telefono }}
+      </div>
+  
+      <a
+        class="badge badge-warning"
+        routerLink="/clientes/{{ currentCliente.id }}"
+      >
+        Editar
+      </a>
+      <button class="badge badge-danger mr-2" (click)="deleteCliente()">
+        Delete
+      </button>
+  
+    </div>
+  
+    <div *ngIf="!currentCliente">
+      <br />
+      <p>Please click on a Cliente...</p>
+    </div>
+  </div>
+  
+  <ng-template #editable>
+    <div *ngIf="currentCliente.id" class="edit-form">
+      <h4>Detalle</h4>
+      <form>
+        <div class="form-group">
+            <label for="direccion">Direccion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion"
+              [(ngModel)]="currentCliente.direccion"
+              name="direccion"
+            />
+          </div>
+    
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              [(ngModel)]="currentCliente.email"
+              name="email"
+            />
+          </div>
+    
+          <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input
+              type="text"
+              class="form-control"
+              id="telefono"
+              [(ngModel)]="currentCliente.telefono"
+              name="telefono"
+            />
+          </div>
+    
+        </form>
+  
+      <button
+        class="badge badge-primary mr-2"
+        *ngIf="false"
+        (click)="updatePublished(false)"
+      >
+        UnPublish
+      </button>
+      <button
+        *ngIf="false"
+        class="badge badge-primary mr-2"
+        (click)="updatePublished(true)"
+      >
+        Publish
+      </button>
+  
+      <button class="badge badge-danger mr-2" (click)="deleteCliente()">
+        Delete
+      </button>
+  
+      <button
+        type="submit"
+        class="badge badge-success mb-2"
+        (click)="updateCliente()"
+      >
+        Update
+      </button>
+      <p>{{ message }}</p>
+    </div>
+  
+    <div *ngIf="!currentCliente.id">
+      <br />
+      <p>Cannot access this Cliente...</p>
+    </div>
+  </ng-template>
+  

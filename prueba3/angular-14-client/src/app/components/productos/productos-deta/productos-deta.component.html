@@ -1,0 +1,89 @@
+<div *ngIf="viewMode; else editable">
+    <div *ngIf="currentProducto.id">
+      <h4>Detalle</h4>
+      <div>
+        <label><strong>Descripcion:</strong></label>  {{ currentProducto.descripcion }}
+      </div>
+  
+      <a
+        class="badge badge-warning"
+        routerLink="/productos/{{ currentProducto.id }}"
+      >
+        Editar
+      </a>
+      <button class="badge badge-danger mr-2" (click)="deleteProducto()">
+        Delete
+      </button>
+  
+    </div>
+  
+    <div *ngIf="!currentProducto">
+      <br />
+      <p>Please click on a Producto...</p>
+    </div>
+  </div>
+  
+  <ng-template #editable>
+    <div *ngIf="currentProducto.id" class="edit-form">
+      <h4>Detalle</h4>
+      <form>
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              [(ngModel)]="currentProducto.nombre"
+              name="nombre"
+            />
+          </div>
+    
+          <div class="form-group">
+            <label for="descripcion">Descripcion</label>
+            <input
+              type="text"
+              class="form-control"
+              id="descripcion"
+              [(ngModel)]="currentProducto.descripcion"
+              name="descripcion"
+            />
+          </div>
+    
+   
+        </form>
+  
+      <button
+        class="badge badge-primary mr-2"
+        *ngIf="false"
+        (click)="updatePublished(false)"
+      >
+        UnPublish
+      </button>
+      <button
+        *ngIf="false"
+        class="badge badge-primary mr-2"
+        (click)="updatePublished(true)"
+      >
+        Publish
+      </button>
+  
+      <button class="badge badge-danger mr-2" (click)="deleteProducto()">
+        Delete
+      </button>
+  
+      <button
+        type="submit"
+        class="badge badge-success mb-2"
+        (click)="updateProducto()"
+      >
+        Update
+      </button>
+      <p>{{ message }}</p>
+    </div>
+  
+    <div *ngIf="!currentProducto.id">
+      <br />
+      <p>Cannot access this Producto...</p>
+    </div>
+  </ng-template>
+  

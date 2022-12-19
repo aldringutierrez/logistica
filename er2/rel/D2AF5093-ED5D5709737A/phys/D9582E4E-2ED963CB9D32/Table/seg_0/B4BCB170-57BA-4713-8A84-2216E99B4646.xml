@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableProxyOraclev10g" name="ENVIOS" directorySegmentName="seg_0" id="B4BCB170-57BA-4713-8A84-2216E99B4646">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<schemaObject>CB0A87CA-28D9-64EA-F43A-F71F66C847B9</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>8E996C6C-9690-A7F7-0B7D-B6DA925C5B67</segment>
+<tableSpace>4BF4E9A6-F9ED-7836-D126-33C4B53D91B0</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FECHA_REGISTRO" id="0BEF8AC3-7AF3-53DE-C549-111333023F00">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GUIA" id="3402EFA5-F1A0-21B9-6E8B-1F0F880525A9">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PUERTO_ID" id="458376BF-E6D7-81F4-56F6-6BECEC54323F">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLIENTE_ID" id="4A6921D5-316D-9AB5-1F83-124B61BC951C">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_ENTREGA" id="73AAE392-9202-76E8-31F6-AE113391C38B">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PLACA" id="7775F995-3472-883C-35C6-C99FDF7E5FA0">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INTERNACIONAL" id="85C7C675-BDD8-BAC9-8D0E-4CA7E5FC1B4F">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BODEGA_ID" id="8986CAEC-3A5C-05DD-C2FD-D07A977A2B36">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRECIO" id="C79C4737-E667-E22A-7A94-252046D0A17B">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCTO_ID" id="C828DF98-9D6E-6D51-7A1D-1A0C02221A27">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CANTIDAD" id="D64F0CBD-2364-2916-8790-DC90860F4577">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="D90BD78D-2A00-8CDE-B47B-C0B0D22EE7E4">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FLOTA" id="F9E96483-FFDE-9E70-580B-06799EDF32CF">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C004061" id="2952FF16-CAFC-8080-C6DB-380012F7E066">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C004063" id="455E54C0-A787-97E9-F2A8-277CE65F1092">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C004064" id="C4F818DB-B15C-2F30-39F4-7D6B4BA56428">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SYS_C004062" id="C845601E-2234-96B7-3A33-8F7EEED10461">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ENVIOS_PK" id="073C2818-BB39-7D1F-2271-3DF427CED48B">
+<createdBy>aeg</createdBy>
+<createdTime>2022-12-16 00:58:45 UTC</createdTime>
+<ownerDesignName>er2</ownerDesignName>
+<schemaObject>CB0A87CA-28D9-64EA-F43A-F71F66C847B9</schemaObject>
+<segment>59FB4C66-3918-0A90-BC30-A2BA7FA3C36E</segment>
+<tableSpace>4BF4E9A6-F9ED-7836-D126-33C4B53D91B0</tableSpace>
+<indexSegment>59FB4C66-3918-0A90-BC30-A2BA7FA3C36E</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev10g>
